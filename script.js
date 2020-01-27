@@ -3,7 +3,8 @@
 function getDogImage() {
     fetch('http://dog.ceo/api/breeds/image/random')
     .then(response => response.json())
-    .then(responseJson => console.log(responseJson)); 
+    .then(responseJson => console.log(responseJson))
+    .catch(error => alert('Something went wrong. Try again later.')); 
 }
 
 function watchForm() {
